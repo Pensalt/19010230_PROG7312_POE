@@ -1,0 +1,15 @@
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\bin\Debug\DeweyDecimalApp.exe.config
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\bin\Debug\DeweyDecimalApp.exe
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\bin\Debug\DeweyDecimalApp.pdb
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.csprojAssemblyReference.cache
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.Menu.resources
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.Properties.Resources.resources
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.ReplacingBooksForm.resources
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.csproj.GenerateResource.cache
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.csproj.CoreCompileInputs.cache
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.exe
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.pdb
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.csproj.CopyComplete
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.IdentifyingAreasForm.resources
