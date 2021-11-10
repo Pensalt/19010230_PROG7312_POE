@@ -16,12 +16,15 @@ ___
 ___
 # How To Use This App:
 **On The Menu Screen:**
+
 Select which options you'd like to view. For Task 2, only the 'Replacing Books' and 'Identifying Areas' button can be clicked on.
 
 **On The Replacing Books Screen**
+
 Simply enter your name and click 'Start' which will generate the 10 random call numbers. Thereafter simply seelect a call number from the random list and click add to add it to the sorted list. Once you have sorted the list, you simply click on 'Confirm' which will check your answers against an answer sheet and let you know if your answers are correct or incorrect. If your answers were correct, the program will check if you have set a high score and will record it if you did so.
 
 **On The Identifying Areas Screen**
+
 Simply enter your name and click 'Start' which will generate the random questions and answers. Thereafter, simply adjust the numeric up down values to match the question number with the correct number of the answer in the answers column. Once you are done matching the columns, click on 'Confirm' which will check your answers against an answer sheet and let you know if your answers are correct of not. If your answers are correct, the streak count is increased and you are now able to proceed to the next set of questions until you eventually get an incorrect answer OR choose to finish the game at which point the program will check if you have set a high score and will record it if you did. 
 
 If your answers were incorrect, the program will display your streak and give you an oppurtunity to restart and try again.
