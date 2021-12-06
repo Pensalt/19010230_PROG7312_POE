@@ -50,7 +50,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CallNumber.cs" />
+    <Compile Include="CallNumberClassifications.cs" />
     <Compile Include="CallNumberGameScores.cs" />
+    <Compile Include="DataTree.cs" />
+    <Compile Include="FindingCallNumbersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindingCallNumbersForm.Designer.cs">
+      <DependentUpon>FindingCallNumbersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindingCallNumbersScores.cs" />
     <Compile Include="IdentifyingAreas.cs" />
     <Compile Include="IdentifyingAreasForm.cs">
       <SubType>Form</SubType>
@@ -73,6 +82,10 @@
     <Compile Include="ReplacingBooksForm.Designer.cs">
       <DependentUpon>ReplacingBooksForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tree.cs" />
+    <EmbeddedResource Include="FindingCallNumbersForm.resx">
+      <DependentUpon>FindingCallNumbersForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IdentifyingAreasForm.resx">
       <DependentUpon>IdentifyingAreasForm.cs</DependentUpon>
     </EmbeddedResource>

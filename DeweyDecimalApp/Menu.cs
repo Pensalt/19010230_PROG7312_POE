@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace DeweyDecimalApp
@@ -7,10 +8,14 @@ namespace DeweyDecimalApp
     {
         //CallNumberGameScores prepJson = new CallNumberGameScores();
         //IdentifyingAreasScores prepJsonIdentifyingAreasScores = new IdentifyingAreasScores();
+        CallNumberClassifications prepJsonCns = new CallNumberClassifications();
+        //FindingCallNumbersScores prepJsonFCNS = new FindingCallNumbersScores();
+
         public Menu()
         {
             InitializeComponent();
             //prepJson.PrepareJsonFile();
+            //prepJsonCns.PrepareJsonFile();
         }
 
         private void btnReplacingBooks_Click(object sender, EventArgs e)
@@ -38,8 +43,19 @@ namespace DeweyDecimalApp
 
         private void btnFindingCallNumbers_Click(object sender, EventArgs e)
         {
+            //prepJsonFCNS.PrepareJsonFile();
+            //List<CallNumberClassifications> clist =  prepJsonCns.GetRandomQA();
+            
+
             // Actual button functionality will come in later
-            MessageBox.Show("This feature will be available at a later date!", "Alert!");
+            //MessageBox.Show("This feature will be available at a later date!", "Alert!");
+
+            // Hiding the menu form and showing the Finding Call Numbers form. 
+            this.Hide();
+            FindingCallNumbersForm fcnf = new FindingCallNumbersForm();
+            fcnf.ShowDialog();
+            this.Show();
         }
+
     }
 }

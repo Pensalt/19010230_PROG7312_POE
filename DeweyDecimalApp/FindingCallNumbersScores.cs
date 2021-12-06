@@ -8,33 +8,33 @@ using System.Threading.Tasks;
 
 namespace DeweyDecimalApp
 {
-    public class IdentifyingAreasScores
+    class FindingCallNumbersScores
     {
         private int streak;
         private string name;
 
-        public int Streak { get => streak; set => streak = value; }
-        public string Name { get => name; set => name = value; }
-
-        public IdentifyingAreasScores(int streak, string name)
+        public FindingCallNumbersScores(int streak, string name)
         {
             this.streak = streak;
             this.name = name;
         }
 
-        public IdentifyingAreasScores()
+        public FindingCallNumbersScores()
         {
-            // An empty constructor is required to instantiate an object of the class to use its methods without having the data for the object.
+
         }
+
+        public int Streak { get => streak; set => streak = value; }
+        public string Name { get => name; set => name = value; }
 
         // Neatly displaying the scores in order.
         public string DisplayHighScores()
         {
             string highscores = "";
             int count = 1;
-            List<IdentifyingAreasScores> hs = ReadHighScores(); ;
+            List<FindingCallNumbersScores> hs = ReadHighScores(); ;
 
-            foreach (IdentifyingAreasScores score in hs)
+            foreach (FindingCallNumbersScores score in hs)
             {
                 highscores += $"{count}. {score.name}: {score.streak}\n";
                 count++;
@@ -43,18 +43,18 @@ namespace DeweyDecimalApp
         }
 
         // Reading high scores from the JSON file and deserializing into a list of type CallNumberGameScores.
-        public List<IdentifyingAreasScores> ReadHighScores()
+        public List<FindingCallNumbersScores> ReadHighScores()
         {
             string jsonData = "";
-            using (StreamReader reader = new StreamReader("IdentifyingAreasScores.json"))
+            using (StreamReader reader = new StreamReader("FindingCallNumbersScores.json"))
             {
                 jsonData = reader.ReadToEnd();
             }
-            List<IdentifyingAreasScores> scores = JsonConvert.DeserializeObject<List<IdentifyingAreasScores>>(jsonData);
+            List<FindingCallNumbersScores> scores = JsonConvert.DeserializeObject<List<FindingCallNumbersScores>>(jsonData);
             return scores;
         }
 
-        public void UpdateLeaderboard(List<IdentifyingAreasScores> inScores, IdentifyingAreasScores userScore)
+        public void UpdateLeaderboard(List<FindingCallNumbersScores> inScores, FindingCallNumbersScores userScore)
         {
             inScores.Add(userScore);
             inScores = inScores.OrderByDescending(x => x.streak).ToList();
@@ -64,7 +64,7 @@ namespace DeweyDecimalApp
                 inScores.RemoveAt(5); // We only record the top 5 scores
             }
 
-            using (StreamWriter writer = new StreamWriter("IdentifyingAreasScores.json", false))
+            using (StreamWriter writer = new StreamWriter("FindingCallNumbersScores.json", false))
             {
                 JsonSerializer serializer = new JsonSerializer();
                 serializer.Serialize(writer, inScores);
@@ -77,14 +77,14 @@ namespace DeweyDecimalApp
         public void PrepareJsonFile()
         {
             // Creating objects to go in the JSON
-            IdentifyingAreasScores score1 = new IdentifyingAreasScores(1, "Shlompie");
-            IdentifyingAreasScores score2 = new IdentifyingAreasScores(2, "CoolLibrarian");
-            IdentifyingAreasScores score3 = new IdentifyingAreasScores(3, "TheLegend27");
-            IdentifyingAreasScores score4 = new IdentifyingAreasScores(4, "1337x");
-            IdentifyingAreasScores score5 = new IdentifyingAreasScores(5, "B00kW0rm");
+            FindingCallNumbersScores score1 = new FindingCallNumbersScores(1, "Shlompie");
+            FindingCallNumbersScores score2 = new FindingCallNumbersScores(2, "CoolLibrarian");
+            FindingCallNumbersScores score3 = new FindingCallNumbersScores(3, "TheLegend27");
+            FindingCallNumbersScores score4 = new FindingCallNumbersScores(4, "1337x");
+            FindingCallNumbersScores score5 = new FindingCallNumbersScores(5, "B00kW0rm");
 
             // Adding the above scores to the list of highscores.
-            List<IdentifyingAreasScores> scores = new List<IdentifyingAreasScores>
+            List<FindingCallNumbersScores> scores = new List<FindingCallNumbersScores>
             {
                 score1,
                 score2,
@@ -94,16 +94,16 @@ namespace DeweyDecimalApp
             };
 
             // Writing the scores to the JSON file
-            using (StreamWriter writer = new StreamWriter("IdentifyingAreasScores.json", false))
+            using (StreamWriter writer = new StreamWriter("FindingCallNumbersScores.json", false))
             {
                 JsonSerializer serializer = new JsonSerializer();
                 serializer.Serialize(writer, scores);
             }
         }
 
-        public bool IsScoreHigher(List<IdentifyingAreasScores> inScores, IdentifyingAreasScores userScore)
+        public bool IsScoreHigher(List<FindingCallNumbersScores> inScores, FindingCallNumbersScores userScore)
         {
-            foreach (IdentifyingAreasScores numberGameScores in inScores)
+            foreach (FindingCallNumbersScores numberGameScores in inScores)
             {
                 // Only scores higher than existing scores are accepted.
                 // Scores equalling the lowest score will not be accepted as they have not beaten a score on the scoreboard.

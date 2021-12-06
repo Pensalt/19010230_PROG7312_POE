@@ -25,7 +25,11 @@ namespace DeweyDecimalApp
             toolTipHelp.SetToolTip(btnCheckAnswers, "Click here to check your answers.");
             toolTipHelp.SetToolTip(btnStart, "Click here to begin a round of questions.");
             toolTipHelp.SetToolTip(btnBack, "Return to the menu.");
-
+            toolTipHelp.SetToolTip(nudA, "Type in your answer or use the up/down buttons to select the apppropriate number.");
+            toolTipHelp.SetToolTip(nudB, "Type in your answer or use the up/down buttons to select the apppropriate number.");
+            toolTipHelp.SetToolTip(nudC, "Type in your answer or use the up/down buttons to select the apppropriate number.");
+            toolTipHelp.SetToolTip(nudD, "Type in your answer or use the up/down buttons to select the apppropriate number.");
+ 
         }
 
         private void IdentifyingAreasForm_Load(object sender, EventArgs e)
@@ -59,8 +63,6 @@ namespace DeweyDecimalApp
                 PopulateColumns();
             }
         }
-
-
 
         public void PopulateColumns()
         {

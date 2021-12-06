@@ -13,3 +13,4 @@ C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\bin\Debug\Newtonsoft
 C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.csproj.CopyComplete
 C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.IdentifyingAreasForm.resources
+C:\Users\callu\source\repos\DeweyDecimalApp\DeweyDecimalApp\obj\Debug\DeweyDecimalApp.FindingCallNumbersForm.resources
