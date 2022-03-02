@@ -17,7 +17,7 @@ ___
 # How To Use This App:
 **On The Menu Screen:**
 
-Select which options you'd like to view. For Task 2, only the 'Replacing Books' and 'Identifying Areas' button can be clicked on.
+Select which options you'd like to view. For the final release, all buttons can be clicked on and will lead to the respective games!
 
 **On The Replacing Books Screen**
 
